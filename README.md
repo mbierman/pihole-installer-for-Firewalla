@@ -3,7 +3,7 @@
 This is a script for installing pi-hole container on Firewalla Gold or Purple. It is based on the [Firewalla tutorial](https://help.firewalla.com/hc/en-us/articles/360051625034-Guide-How-to-install-Pi-Hole-on-Gold-Purple-Beta-) and has been tested on 1.974.
 
 # Notes
-- Pi-hole runs fine on Purole or Gold.
+- Pi-hole runs fine on Purple or Gold.
 - Firewalla uses pi-hole v5.1.2  in their example. I have switched it to "latest" because that is a bit dated now. 
 - The Pi-hole password will be, `firewalla`.
 
