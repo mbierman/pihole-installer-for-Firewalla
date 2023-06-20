@@ -13,10 +13,15 @@ This is a script for installing pi-hole container on Firewalla Gold or Purple. I
 To install:
 1. SSH into your Firewalla ([learn how](https://help.firewalla.com/hc/en-us/articles/115004397274-How-to-access-Firewalla-using-SSH-) if you don't know how already.)
 
-2. If you want regular pi-hole, copy the line below and paste into the Firewalla shell and then hit enter. 
+2. If you want regular pi-hole with the version Firewalla recommends, copy the line below and paste into the Firewalla shell and then hit enter. 
 
 ```
 curl -s -L -C- https://raw.githubusercontent.com/mbierman/pihole-installer-for-Firewalla/main/pihole_docker_install.sh | cat <(cat <(bash))
+```
+
+If you want pi-hole with the latest pihole image, copy the line below instead and paste into the Firewalla shell and then hit enter.
+```
+curl -s -L -C- https://raw.githubusercontent.com/mbierman/pihole-installer-for-Firewalla/main/pihole_docker_install.sh | cat <(cat <(bash -s -- latest))
 ```
 
 If you want pi-hole with DoH, copy the line below instead and paste into the Firewalla shell and then hit enter.
