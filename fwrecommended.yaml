@@ -4,8 +4,7 @@ version: "3"
 services:
   pihole:
     container_name: pihole
-#    image: pihole/pihole:v5.1.2
-    image: pihole/pihole:latest
+    image: pihole/pihole:v5.1.2
     environment:
       # set a secure password here or the default will be firewalla
       WEBPASSWORD: 'firewalla'
