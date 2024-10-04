@@ -16,11 +16,11 @@ if [ "$1" = "doh" ] ; then
 
 elif [ "$1" = "latest" ] ; then
 	# This uses the latest docker image.
-	curl https://raw.githubusercontent.com/mbierman/pihole-installer-for-Firewalla/main/docker-compose.yaml > $path2/docker-compose.yaml
+	curl https://raw.githubusercontent.com/mbierman/pihole-installer-for-Firewalla/main/latest.yaml > $path2/docker-compose.yaml
 
 else
  	# This is Firewalla's recommended 
- 	curl https://raw.githubusercontent.com/mbierman/pihole-installer-for-Firewalla/main/latest.yaml > $path2/docker-compose.yaml
+ 	curl https://raw.githubusercontent.com/mbierman/pihole-installer-for-Firewalla/main/fwrecommended.yaml > $path2/docker-compose.yaml
  
 fi
  
