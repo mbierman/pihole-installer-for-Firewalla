@@ -45,6 +45,15 @@ curl -s -L -C- https://raw.githubusercontent.com/mbierman/pihole-installer-for-F
 
 **Standard disclaimer:** I can not be responsible for any issues that may result. Nothing in the script should in any way, affect firewalla as a router or comprimise security. Happy to answer questions though if I can. :)
 
+# Debugging Tips
+Use the fillowing to debug. If you have any issues, please provide: 
+1. Go to [http://172.16.0.2/admin/](http://172.16.0.2/admin/) ? [http://172.16.0.2](http://172.16.0.2) will not work.
+1. Get the logs. When SSH'd to Firewalla, `sudo docker logs pihole`
+1. Try `sudo docker inspect pihole | grep "IPAddress"`
+1. Try `sudo docker ps` you hould get something like:
+`CONTAINER ID   IMAGE                  COMMAND      CREATED          STATUS                    PORTS                            NAMES a5fe91e7a8ab   pihole/pihole:latest   "/s6-init"   11 minutes ago   Up 11 minutes (healthy)   53/udp, 53/tcp, 80/tcp, 67/udp   pihole`
+1. Try `sudo docker inspect pihole`
+
 # Uninstalling
 
 You can run this by copying this line and run it on firewalla to uninstall. 
@@ -53,3 +62,5 @@ curl -s -L -C- https://raw.githubusercontent.com/mbierman/pihole-installer-for-F
 ```
 
 There are lots of pihole communities on [Reddit](https://www.reddit.com/r/pihole/). If you have pi-hole questions, please check there. 
+
+
