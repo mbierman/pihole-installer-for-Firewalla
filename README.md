@@ -15,6 +15,7 @@ This is a script for installing pi-hole container on Firewalla Gold or Purple. I
 
 Given the options, I strongly recommend the first. Some people may find this tradeoff unacceptable. There is another option. [nextDNS](https://nextdns.io) can be used with the best of both worlds see [my installer](https://github.com/mbierman/Firewalla-NextDNS-CLI-install) for using nextDNS with Fireawlla.
 
+#Installation
 To install:
 1. SSH into your Firewalla ([learn how](https://help.firewalla.com/hc/en-us/articles/115004397274-How-to-access-Firewalla-using-SSH-) if you don't know how already.)
 
