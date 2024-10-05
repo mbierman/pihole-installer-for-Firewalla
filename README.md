@@ -9,6 +9,11 @@ This is a script for installing pi-hole container on Firewalla Gold or Purple. I
 
 ![image](https://user-images.githubusercontent.com/1205471/180276302-1dfdb91f-952c-4194-8d06-371f1c14912d.png)
 
+- Understand that Firewalla and Pihole have some overlapping features which means you have two options:
+     1. Set the Firewalla LAN DNS settings to point to pihole. Pihole will see only firewalla, not individiual devices. So that means you can't tweak pihole per device. 
+     2. Disable DNS Booster This will allow Pihole to see individual devices but will disable many firewalla features. 
+
+Given the options, I strongly recommend the first. Some people may find this tradeoff unacceptable. There is another option. [nextDNS](https://nextdns.io) can be used with the best of both worlds see [my installer](https://github.com/mbierman/Firewalla-NextDNS-CLI-install) for using nextDNS with Fireawlla.
 
 To install:
 1. SSH into your Firewalla ([learn how](https://help.firewalla.com/hc/en-us/articles/115004397274-How-to-access-Firewalla-using-SSH-) if you don't know how already.)
